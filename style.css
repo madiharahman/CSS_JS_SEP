@@ -1,0 +1,114 @@
+/* ===== General Styles ===== */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    color: #333;
+}
+
+header {
+    background-color: #023047;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+header p {
+    margin-top: 5px;
+}
+
+/* ===== Sections ===== */
+section {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* ===== Traffic Light Demo ===== */
+.traffic-light {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80px;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.light {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.red { background-color: red; }
+.yellow { background-color: yellow; }
+.green { background-color: green; }
+
+/* ===== Position Demo Boxes ===== */
+.position-demo {
+    position: relative;
+    height: 400px;
+    border: 1px dashed #ccc;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Position types */
+.static { background-color: #8ecae6; position: static; }
+.relative { background-color: #ffb703; position: relative; top:10px; left:10px; }
+.absolute { background-color: #fb8500; position: absolute; top:150px; left:20px; }
+.sticky { background-color: #219ebc; position: sticky; top:10px; }
+.fixed { background-color: #023047; position: fixed; top:80px; right:20px; } /* moved below header */
+
+/* ===== JS Section Button ===== */
+.js-section button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: #8ecae6;
+    color: #023047;
+    transition: 0.3s;
+}
+
+.js-section button:hover {
+    background-color: #219ebc;
+    color: #fff;
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    background-color: #023047;
+    color: #fff;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
